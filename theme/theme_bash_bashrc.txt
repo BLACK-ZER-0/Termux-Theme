@@ -1,29 +1,16 @@
-# === Start of Neofetch Distro Rotation ===
+
 clear
 echo -e "\n\n"
-
-# Distros list
 distros=("Profelis SambaBOX" "IRIX" "Ubuntu Cinnamon" "Ubuntu Budgie" "openSUSE Tumbleweed" "Trisquel" "Siduction" "Scientific" "Regata" "Qubes" "popos" "OpenIndiana" "OpenBSD" "openEuler" "Nurunner" "GalliumOS" "Frugalware" "FreeMiNT" "Endless" "Fedora" "Debian" "Cucumber" "CRUX" "Artix" "CentOS" "ArcoLinux" "ArchStrike" "Chrom" "Clover" "dahlia" "PacBSD" "TrueOS" "Scientific" "SliTaz" "Sparky" "ArchBox" "Deepin" "dragonfly_old" "ARCHlabs" "Kali" "KaOS" "Kubuntu" "LMDE" "Mandriva" "Neptune" "NixOS" "OpenStage" "Parrot" "Parsix" "Peppermint" "Raspbian" "Reborn OS" "Redhat" "Refracted Devuan" "Sabayon" "Void" "ClearOS" "Porteus" "openEuler" "Netrunner" "Kogaion" "KDE" "januslinux" "Haiku" "Anarchy" "Hyperbola" "Nurunner" "Profelis SambaBOX" "Ubuntu Studio" "Ubuntu Budgie" "openSUSE Tumbleweed" "Solus" "SalentOS" "Regata" "Radix" "Qubes" "Proxmox" "Parabola" "Proxmox" "Open" "Open Source Media Center")
-
 index_file="$HOME/.distro_index"
-
 if [ ! -f "$index_file" ]; then
   echo $((RANDOM % ${#distros[@]})) > "$index_file"
 fi
-
 index=$(cat "$index_file")
 distro="${distros[$index]}"
 echo $(( (index + 1) % ${#distros[@]} )) > "$index_file"
-
-# Set custom user and team name
 export USER="BLACK ZER0"
 export HOSTNAME="BANGLADESH CYBER SQUAD"
-
-# Run neofetch with custom username and hostname
 neofetch --ascii_distro "$distro" --username "$USER" --hostname "$HOSTNAME"
-
-# Aliases
 alias clear='clear && neofetch --ascii_distro "$distro" --username "$USER" --hostname "$HOSTNAME"'
 alias whoami='echo $USER'
-
-# === End of Neofetch Distro Rotation ===
