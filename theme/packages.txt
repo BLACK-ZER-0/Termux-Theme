@@ -1,0 +1,9 @@
+ruby
+fish
+colorls
+curl
+git
+neofetch
+toilet
+figlet
+

@@ -1,0 +1,8 @@
+# ~/.bashrc
+
+# Auto start fish shell
+if command -v fish > /dev/null 2>&1; then
+    exec fish
+fi
+
+source /data/data/com.termux/files/home/.config/broot/launcher/bash/br
