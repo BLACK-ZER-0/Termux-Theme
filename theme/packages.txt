@@ -1,8 +1,11 @@
 ruby
 fish
 curl
+wget
+python3
 git
 neofetch
 toilet
 figlet
+
 
