@@ -1,8 +1,8 @@
 #_____________________| INFO  |___________________#
-# Obfuscated BY : SHONCHOYON BARUA
+# Obfuscated BY : BLACK ZER0
 # TEAM : BANGLADESH CYBER SQUAD
 # PYTHON VERSION : 3.11
-# GITHUB : https://github.com/ADIRTTA
+# GITHUB : https://github.com/BLACK-ZER-0
 # Time : 2025-11-29 23:56:23
 # Month: November
 # Year : 2025
