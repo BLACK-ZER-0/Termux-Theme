@@ -1,12 +1,10 @@
 #!/bin/bash
 
-# COLORS
+# code by BLACK ZERO
 green="\e[92m"
 reset="\e[0m"
 
 THEME_DIR="theme"
-
-# BAR animation function
 bar_animation() {
     local pkg_name=$1
     for i in $(seq 1 20); do
@@ -19,7 +17,6 @@ bar_animation() {
 echo -e "${green}Installing required packages...${reset}"
 while read pkg; do
     echo -e "${green}Installing $pkg...${reset}"
-    # Auto yes (-y) for all packages
     pkg install -y "$pkg" > /dev/null 2>&1
     bar_animation "$pkg"
 done < "$THEME_DIR/packages.txt"
