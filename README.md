@@ -57,8 +57,8 @@ pkg install python3 -y
 pkg install git -y
 git clone https://github.com/BLACK-ZER-0/TMX-Theme.git
 cd TMX-Theme
-chmod +x
-chmod 777*
+chmod 777 *
+chmod +x *
 pip install -r tmx-theme.txt
 bash install.sh
 python3 tmx-theme.py
